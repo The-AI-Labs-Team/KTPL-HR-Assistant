@@ -72,7 +72,7 @@ def summarize_documents(documents):
 
 # Initialize Streamlit App
 st.set_page_config(page_title="Krish technolabs HR Processor", page_icon="📄")
-st.title("Krish technolabs HR Knowledgebase Processor")
+st.title("Welcome to KTPL Admin Panel")
 st.markdown("Use this tool to upload or provide links to your HR policy documents for processing.")
 
 # Sidebar for API key input

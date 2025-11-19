@@ -79,7 +79,7 @@ if page == "admin":
 
     # Initialize Streamlit App
     st.set_page_config(page_title="Krish technolabs HR Processor", page_icon="📄")
-    st.title("Krish technolabs HR Knowledgebase Processor")
+    st.title("Welcome to KTPL Admin Panel")
     st.markdown("Use this tool to upload or provide links to your HR policy documents for processing.")
 
     # Sidebar for API key input
@@ -215,11 +215,6 @@ else:
     st.markdown('<div class="main-header">💬 Krish Technolabs HR Assistant</div>', unsafe_allow_html=True)
     st.markdown('<div class="sub-header">Ask me anything about company policies, training materials, rate cards, and more!</div>', unsafe_allow_html=True)
 
-    # Sidebar for API key input
-    with st.sidebar:
-        api_key = st.text_input("Enter your Gemini API Key", type="password")
-        if api_key:
-            os.environ["GOOGLE_API_KEY"] = api_key
 
     # Initialize session state for chat history
     if "messages" not in st.session_state:
